@@ -1,0 +1,127 @@
+_id: req_53ee3602883c4446972582e2ece96d5d
+type: Request
+parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
+modified: 1694467140620
+created: 1694467140620
+url: "{{baseUrl}}/v0/content/table/{{tableID}}"
+name: PutTable
+description: ""
+method: PUT
+body:
+  mimeType: ""
+  text: >-
+    {
+      "tableEdits": [
+        // {
+        //   "type": "clearCellsFormat",
+        //   "region": "B3:E6"
+        // },
+        // {
+        //   "type": "clearCellsText",
+        //   "region": "B3:E6"
+        // },
+        // {
+        //   "type": "formatCells",
+        //   "region": "A1:D6",
+        //   "format": {
+        //     "bold": false,
+        //     "italic": true
+        //   }
+        // },
+        // {
+        //   "type": "deleteColumns",
+        //   "columns": "A:D"
+        // },
+        // {
+        //   "type": "deleteRows",
+        //   "rows": "2:5"
+        // },
+        // {
+        //   "type": "insertColumns",
+        //   "count": 3,
+        //   "nextTo": "C",
+        //   "side": "putAfter"
+        // },
+        // {
+        //   "type": "insertRows",
+        //   "count": 3,
+        //   "nextTo": 4,
+        //   "side": "putBefore"
+        // },
+        // {
+        //   "type": "moveColumns",
+        //   "move": "H:K",
+        //   "nextTo": "C",
+        //   "side": "putAfter"
+        // },
+        // {
+        //   "type": "moveRows",
+        //   "move": "15:30",
+        //   "nextTo": 4,
+        //   "side": "putBefore"
+        // },
+
+        {
+          "type": "setCellsText",
+          "region": "B2:",
+          "text": [
+            [
+            //   "B2 Text 1",
+            //   "C2 Text 1"
+            // ],
+            // [
+            //   "B3 Text 1",
+              "C3 Text 1"
+            ]
+          ]
+        }
+      ],
+      "cellEdits": [
+        // {
+        //   "cell": "A1",
+        //   "edits": [
+        //     {
+        //       "type": "insertText",
+        //       "insertAt": {},
+        //       "text": "Only with complications does a boring trip become an epic journey",
+        //       "format": {
+        //         "font": "Comic Sans",
+        //         "size": 12,
+        //         "bold": true
+        //       },
+        //       "inheritFormats": false
+        //     },
+         
+        //     {
+        //       "type": "formatText",
+        //       "selection": {
+        //         "start": {
+        //           "offset": 0
+        //         },
+        //         "stop": {
+        //           "offset": 5
+        //         }
+        //       },
+        //       "format": {
+        //         "bold": false,
+        //         "italic": true
+        //       }
+        //     }
+        //   ]
+        // }
+      ]
+    }
+parameters:
+  - name: revision
+    value: "{{headRevision}}"
+    disabled: false
+headers: []
+authentication: {}
+metaSortKey: -1694467140620
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

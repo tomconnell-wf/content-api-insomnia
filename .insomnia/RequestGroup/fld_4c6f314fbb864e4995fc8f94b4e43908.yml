@@ -1,0 +1,15 @@
+_id: fld_4c6f314fbb864e4995fc8f94b4e43908
+type: RequestGroup
+parentId: wrk_71af7fed59594012ab5d520d6b90c565
+modified: 1694467140610
+created: 1694467140610
+name: Content API Manual
+description: >
+  An API for getting and modifying rich-text documents, sections, presentations,
+  slides, layout slides, and associated content, such as paragraphs, formatted
+  text, shapes, and properties.
+environment:
+  baseUrl: /
+  oauth_access_token: ""
+environmentPropertyOrder: null
+metaSortKey: -1694467140610

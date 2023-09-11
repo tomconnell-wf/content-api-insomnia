@@ -1,0 +1,30 @@
+_id: req_e00e7b5cc8eb43988b09b91fb39926ec
+type: Request
+parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
+modified: 1694467140619
+created: 1694467140619
+url: "{{baseUrl}}/v0/content/table/{{tableID}}"
+name: GetTable
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: offset
+    value: "1"
+    disabled: true
+  - name: limit
+    value: "666"
+    disabled: true
+  - name: revision
+    value: 2c6438ab45553de7
+    disabled: true
+headers: []
+authentication: {}
+metaSortKey: -1694467140619
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

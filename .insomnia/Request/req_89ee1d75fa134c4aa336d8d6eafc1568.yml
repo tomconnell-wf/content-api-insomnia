@@ -1,0 +1,115 @@
+_id: req_89ee1d75fa134c4aa336d8d6eafc1568
+type: Request
+parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
+modified: 1694467140619
+created: 1694467140619
+url: "{{baseUrl}}/v0/content/rich-text/{{richTextID}}"
+name: PutRichText
+description: ""
+method: PUT
+body:
+  mimeType: ""
+  text: |-
+    {
+      "edits": [
+        // {
+        //   "type": "insertText",
+        //   "insertAt": {
+        //         "id": "2c6438ab45553de4",
+        //     "offset": 0
+        //   },
+        //   "text": "Hello Small Blue Marble",
+        //   "format": {
+        //     "font": "Comic Sans",
+        //     "size": 12,
+        //     "bold": true
+        //   },
+        //   "inheritFormats": false
+        // },
+    //     {
+    //       "type": "formatText",
+    //       "selection": {
+    //         "start": {
+    //                     "id": "2c6438ab45553de4",
+    //   "offset": 0
+    //         },
+    //         "stop": {
+    //             "id": "2c6438ab45553de4",
+
+    //           "offset": 5
+    //         }
+    //       },
+    //       "format": {
+    //         "bold": false,
+    //         "italic": true
+    //       }
+    //     }
+
+    //     {
+    //       "type": "deleteText",
+    //       "selection": {
+    //         "start": {
+    //             "id": "2c6438ab45553de4",
+
+    //           "offset": 6
+    //         },
+    //         "stop": {
+    //             "id": "2c6438ab45553de4",
+
+    //           "offset": 17
+    //         }
+    //       }
+    //     },
+    //     {
+    //       "type": "insertText",
+    //       "insertAt": {
+    //         "offset": 6
+    //       },
+    //       "text": "World",
+    //       "inheritFormats": true
+    //     },
+    //     {
+    //       "type": "insertTable",
+    //       "insertAt": {
+    //             "id": "2c6438ab45553de4",
+
+    //         "offset": 0
+    //       },
+    //       "dimensions": {
+    //         "height": 200,
+    //         "width": 300
+    //       },
+    //       "columnCount": 3,
+    //       "rowCount": 2
+    //     }
+        {
+          "type": "setParagraphProperties",
+          "selection": {
+                "id": "2c6438ab45553de4",
+
+            "count": 1
+          },
+          "properties": {
+            // "pageBreakBefore": true,
+            // "firstLineIndent": 200
+            "startIndent": 20,
+            "endIndent": 10
+            // "alignment": "right"
+          }
+        }
+      ]
+    }
+parameters:
+  - name: revision
+    value: "{{headRevision}}"
+    disabled: false
+headers: []
+authentication: {}
+metaSortKey: -1694467140619
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

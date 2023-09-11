@@ -1,0 +1,22 @@
+_id: req_358e073f4a7840f68acf2547554f62dd
+type: Request
+parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
+modified: 1694467596612
+created: 1694467140611
+url: "{{baseUrl}}/v0/documents/{{docID}}"
+name: GetDocument
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+metaSortKey: -1694467140611
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

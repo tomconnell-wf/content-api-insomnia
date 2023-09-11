@@ -1,0 +1,33 @@
+_id: req_e1b24c7f13c24915b703f1f8a67e4151
+type: Request
+parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
+modified: 1694467140616
+created: 1694467140616
+url: "{{baseUrl}}/v0/documents/{{docID}}/sections"
+name: PostSections
+description: ""
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+        "name": "Content API",
+        "insertStrategy": {
+            "after": "{{sectionID}}",
+            "kind": "insertAfter"
+        }
+    }
+parameters:
+  - name: name
+    value: "Yo:"
+    disabled: true
+headers: []
+authentication: {}
+metaSortKey: -1694467140616
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,29 @@
+_id: req_a9df5df0b890443984cb06a3f5ff7005
+type: Request
+parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
+modified: 1694467140612
+created: 1694467140612
+url: "{{baseUrl}}/v0/documents"
+name: PostDocuments
+description: ""
+method: POST
+body:
+  mimeType: ""
+  text: |-
+    {
+        "name": "Content API"
+    }
+parameters:
+  - name: name
+    value: "Yo:"
+    disabled: true
+headers: []
+authentication: {}
+metaSortKey: -1694467140612
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
