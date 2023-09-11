@@ -1,9 +1,9 @@
-_id: req_89ee1d75fa134c4aa336d8d6eafc1568
+_id: req_502e3a4ab21d46a69771da340d754854
 type: Request
-parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
-modified: 1694467140619
+parentId: fld_b8bc50d607d74b338869f55117893a23
+modified: 1694473166751
 created: 1694467140619
-url: "{{baseUrl}}/v0/content/rich-text/{{richTextID}}"
+url: "{{ _.root }}/content/rich-text/{{richTextID}}"
 name: PutRichText
 description: ""
 method: PUT
@@ -104,7 +104,9 @@ parameters:
     value: "{{headRevision}}"
     disabled: false
 headers: []
-authentication: {}
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1694467140619
 isPrivate: false
 settingStoreCookies: true

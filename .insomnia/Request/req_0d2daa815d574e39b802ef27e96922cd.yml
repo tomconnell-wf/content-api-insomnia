@@ -1,16 +1,18 @@
-_id: req_e576923ee2cc4e1fbeeb9f6a95d13b18
+_id: req_0d2daa815d574e39b802ef27e96922cd
 type: Request
-parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
-modified: 1694467140617
+parentId: fld_b8bc50d607d74b338869f55117893a23
+modified: 1694473088339
 created: 1694467140617
-url: "{{baseUrl}}/v0/documents/{{docID}}/revisions/{{headRevision}}"
+url: "{{ _.root }}/documents/{{docID}}/revisions/{{headRevision}}"
 name: GetDocumentRevision
 description: ""
 method: GET
 body: {}
 parameters: []
 headers: []
-authentication: {}
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1694467140617
 isPrivate: false
 settingStoreCookies: true

@@ -1,9 +1,9 @@
-_id: req_358e073f4a7840f68acf2547554f62dd
+_id: req_75d49f7edbdd4a9ca9e7c0d7443e37b3
 type: Request
-parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
-modified: 1694467596612
+parentId: fld_b8bc50d607d74b338869f55117893a23
+modified: 1694471437241
 created: 1694467140611
-url: "{{baseUrl}}/v0/documents/{{docID}}"
+url: "{{ _.root }}/documents/{{ _.docID }}"
 name: GetDocument
 description: ""
 method: GET
@@ -12,6 +12,7 @@ parameters: []
 headers: []
 authentication:
   type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1694467140611
 isPrivate: false
 settingStoreCookies: true

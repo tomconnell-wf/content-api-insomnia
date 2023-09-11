@@ -1,9 +1,9 @@
-_id: req_a9df5df0b890443984cb06a3f5ff7005
+_id: req_5f6bfdefb31e4718bc99b9efff59e754
 type: Request
-parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
-modified: 1694467140612
+parentId: fld_b8bc50d607d74b338869f55117893a23
+modified: 1694473044540
 created: 1694467140612
-url: "{{baseUrl}}/v0/documents"
+url: "{{ _.root }}/documents"
 name: PostDocuments
 description: ""
 method: POST
@@ -18,7 +18,9 @@ parameters:
     value: "Yo:"
     disabled: true
 headers: []
-authentication: {}
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1694467140612
 isPrivate: false
 settingStoreCookies: true

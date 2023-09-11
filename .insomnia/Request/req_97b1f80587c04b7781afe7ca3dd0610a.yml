@@ -1,9 +1,9 @@
-_id: req_53ee3602883c4446972582e2ece96d5d
+_id: req_97b1f80587c04b7781afe7ca3dd0610a
 type: Request
-parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
-modified: 1694467140620
+parentId: fld_b8bc50d607d74b338869f55117893a23
+modified: 1694473159633
 created: 1694467140620
-url: "{{baseUrl}}/v0/content/table/{{tableID}}"
+url: "{{ _.root }}/content/table/{{tableID}}"
 name: PutTable
 description: ""
 method: PUT
@@ -116,7 +116,9 @@ parameters:
     value: "{{headRevision}}"
     disabled: false
 headers: []
-authentication: {}
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1694467140620
 isPrivate: false
 settingStoreCookies: true

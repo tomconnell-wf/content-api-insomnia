@@ -1,16 +1,18 @@
-_id: req_4b6ef1764e9c47bebe55aa27433d7278
+_id: req_72bea18eb7314049b6b5ca50c79e14bd
 type: Request
-parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
-modified: 1694467140618
+parentId: fld_b8bc50d607d74b338869f55117893a23
+modified: 1694472463373
 created: 1694467140618
-url: "{{baseUrl}}/v0/documents/{{docID}}/sections/{{sectionID}}"
+url: "{{ _.root }}/documents/{{docID}}/sections/{{sectionID}}"
 name: GetSection
 description: ""
 method: GET
 body: {}
 parameters: []
 headers: []
-authentication: {}
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1694467140618
 isPrivate: false
 settingStoreCookies: true

@@ -1,9 +1,9 @@
-_id: req_e1b24c7f13c24915b703f1f8a67e4151
+_id: req_79e6a4e322724ff8a9b4a52d7a87e8e6
 type: Request
-parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
-modified: 1694467140616
+parentId: fld_b8bc50d607d74b338869f55117893a23
+modified: 1694473065484
 created: 1694467140616
-url: "{{baseUrl}}/v0/documents/{{docID}}/sections"
+url: "{{ _.root }}/documents/{{docID}}/sections"
 name: PostSections
 description: ""
 method: POST
@@ -22,7 +22,9 @@ parameters:
     value: "Yo:"
     disabled: true
 headers: []
-authentication: {}
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1694467140616
 isPrivate: false
 settingStoreCookies: true

@@ -1,16 +1,18 @@
-_id: req_89410b2889f54d98ad189304e0407310
+_id: req_c0b03f43acad4519af4c9dcf650719a0
 type: Request
-parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
-modified: 1694467140616
+parentId: fld_b8bc50d607d74b338869f55117893a23
+modified: 1694472294548
 created: 1694467140616
-url: "{{baseUrl}}/v0/content/rich-text/{{richTextID}}"
+url: "{{ _.root }}/content/rich-text/{{richTextID}}"
 name: GetRichText
 description: ""
 method: GET
 body: {}
 parameters: []
 headers: []
-authentication: {}
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1694467140616
 isPrivate: false
 settingStoreCookies: true

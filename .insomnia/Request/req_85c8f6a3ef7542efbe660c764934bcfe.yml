@@ -1,0 +1,33 @@
+_id: req_85c8f6a3ef7542efbe660c764934bcfe
+type: Request
+parentId: fld_b8bc50d607d74b338869f55117893a23
+modified: 1694472990872
+created: 1694469698059
+url: https://api.wk-dev.wdesk.org/iam/v1/oauth2/token
+name: Token
+description: ""
+method: POST
+body:
+  mimeType: application/x-www-form-urlencoded
+  params:
+    - name: grant_type
+      value: client_credentials
+    - name: client_id
+      value: eb421203ff5b4497a85a0fc410bbd273
+    - name: client_secret
+      value: 207f60e8fefece4287111b821320cc5eb9a09a1a1c70c4fc
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/x-www-form-urlencoded
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1694467140720
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

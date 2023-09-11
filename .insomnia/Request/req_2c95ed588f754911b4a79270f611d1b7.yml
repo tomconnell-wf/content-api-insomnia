@@ -1,9 +1,9 @@
-_id: req_e00e7b5cc8eb43988b09b91fb39926ec
+_id: req_2c95ed588f754911b4a79270f611d1b7
 type: Request
-parentId: fld_4c6f314fbb864e4995fc8f94b4e43908
-modified: 1694467140619
+parentId: fld_b8bc50d607d74b338869f55117893a23
+modified: 1694473170753
 created: 1694467140619
-url: "{{baseUrl}}/v0/content/table/{{tableID}}"
+url: "{{ _.root }}/content/table/{{tableID}}"
 name: GetTable
 description: ""
 method: GET
@@ -19,7 +19,9 @@ parameters:
     value: 2c6438ab45553de7
     disabled: true
 headers: []
-authentication: {}
+authentication:
+  type: bearer
+  token: "{{ _.token }}"
 metaSortKey: -1694467140619
 isPrivate: false
 settingStoreCookies: true
